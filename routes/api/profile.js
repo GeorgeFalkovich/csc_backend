@@ -22,7 +22,7 @@ router.get("/me", auth, async (req, res) => {
     if (!profile) {
       return res
         .status(400)
-        .json({ msg: "There is now profile for this user" });
+        .json({ msg: "There is now profile for this special user" });
     }
 
     res.json(profile);
