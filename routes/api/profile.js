@@ -28,7 +28,7 @@ router.get("/me", auth, async (req, res) => {
     res.json(profile);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Server error. Try Again");
+    res.status(500).send("Password or email do not match");
   }
 });
 
